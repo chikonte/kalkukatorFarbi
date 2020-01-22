@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор фарби</title>
+    <script src = "1.js "defer> </script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+   
+    <data>        
+        <p> 
+        <input name="textfild" type="text" class ="inputIN" value="Введіть площу фарбування" >
+        <select name="boxSelect" class = "boxSelect" id="box1">
+            <option> м.кв</option>
+            <option> см.кв</option>
+            <option> мм.кв</option>
+        </select>
+        <button onclick="butoonStart" class = "buttonStart"> Жмакай </button>
+        </p>
+        <hr>
+    </data>
+    
+    <basic>
+        <paint>
+            <p>Виберіть колір фарби</p>
+            <p><input name="radioButton" type="radio" value="black" id = "radiobatonBlack"> Чорний </p>
+            <p><input name="radioButton" type="radio" value="with" id = "radiobatonWith"> Білий </p>
+            <p><input name="radioButton" type="radio" value="blue" id = "radiobatonBlue"> Блакитний </p>
+            <p><input name="radioButton" type="radio" value="red" id = "radiobatonRed"> Червоний</p>
+            <p><input name="radioButton" type="radio" value="gray" id = "radiobatonGray"> Сірий </p>
+            <p><input name="radioButton" type="radio" value="brow" id = "radiobatonBrow"> Коричневий</p>
+            <p><input name="radioButton" type="radio" value="null" id = "radiobatonNull"> Немає</p>     
+        </paint>
+        
+        <constr>            
+            <p><input name="radioButtonconst" type="radio" value="k1" id = "radiobatonk1"> Великі площини (К=1) </p>
+            <p><input name="radioButtonconst" type="radio" value="k1.5" id = "radiobatonk1.5"> Великі площини з великими отворами (К=1.5) </p>
+            <p><input name="radioButtonconst" type="radio" value="k2" id = "radiobatonk2"> Рамна конструкція (К=2) </p>
+        </constr>        
+    </basic>            
+</body>
+</html>
