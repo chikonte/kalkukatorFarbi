@@ -14,13 +14,13 @@
         <div class="outer">
             <div class="inner">
                 <data class ="dataIn">
-                    <input name="textfild" type="text" class ="inputIN" value="" >
+                    <input name="textfild" type="text" class ="inputIN" value="" id = "inputInUser">
                     <select name="boxSelect" class = "boxSelect" id="box1">
                         <option> м.кв</option>
                         <option> см.кв</option>
                         <option> мм.кв</option>
                     </select>
-                    <button onclick="butoonStart" id = "butoonStart" class = "buttonStart"> Жмакай </button>
+                    <button onclick ="butoonStart ()" id = "butoonStart" class = "buttonStart"> Жмакай </button>
                     
                     
                 </data>
@@ -30,7 +30,7 @@
                     <p class="namePaint">Виберіть колір фарби</p>
                     <hr>
                     
-                    <p><input name="radioButton" type="radio" value="0.06" class="radiobatonPaint" id = "radiobatonBlack" checked>
+                    <p><input name="radioButton" type="radio" value="0.06" class="radiobatonPaint" id = "radiobatonBlack" >
                     <label for = "radiobatonBlack" class="radioLabel">Чорний</label></p>               
                     
                    <p> <input name="radioButton" type="radio" value="0.12" class="radiobatonPaint" id = "radiobatonWith">  
@@ -48,14 +48,14 @@
                    <p> <input name="radioButton" type="radio" value="0.07" class="radiobatonPaint" id = "radiobatonBrow"> 
                    <label for = "radiobatonBrow" class="radioLabel">Коричневий</label></p>
                    
-                   <p><input name="radioButton" type="radio" value="0" class="radiobatonPaint" id = "radiobatonTPH"> 
+                   <p><input name="radioButton" type="radio" value="999" class="radiobatonPaint" id = "radiobatonTPH"> 
                     <label for = "radiobatonTPH" class="radioLabel">TPH</label></p>
                     
-                     <p><input name="radioButton" type="radio" value="0" class="radiobatonPaint" id = "radiobatongrease"> 
+                     <p><input name="radioButton" type="radio" value="888" class="radiobatonPaint" id = "radiobatongrease"> 
                     <label for = "radiobatonGrease" class="radioLabel">Мастило</label></p>
                    
-                    <p><input name="radioButton" type="radio" value="1" class="radiobatonPaint" id = "radiobatonNull"> 
-                    <label for = "radiobatonNull" class="radioLabel">Немає</label></p>                    
+                    <p><input name="radioButton" type="radio" value="777" class="radiobatonPaint" id = "radiobatonNull"> 
+                    <label for = "radiobatonNull" class="radioLabel">Грунтувати</label></p>                    
                 </choice_paint>
                 
                 <mod1>
@@ -64,13 +64,13 @@
                     	<p class="nameConstr">Виберіть тип конструкції</p>
                    		 <hr>
                     
-                   		 <p><input name="radioButtonConstr" type="radio" value="1.2" class="radiobatonPaint" id = "radiobatonK12" checked>
+                   		 <p><input name="radioButtonConstr" type="radio" value="1.2" class="radiobatonPaint" id = "radiobatonK12" >
                    		 <label for = "radiobatonK12" class="radioLabel">Великі площини (К=1,2)</label></p>               
                     
                    		<p> <input name="radioButtonConstr" type="radio" value="1.5" class="radiobatonPaint" id = "radiobatonK15">  
                   		 <label for = "radiobatonK15" class="radioLabel">Деталі середніх габаритів  (К=1,5)</label> </p>
                    
-                   		<p> <input name="radioButtonConstr" type="radio" value="2" class="radiobatonPaint" id = "radiobatonK2">  
+                   		<p> <input name="radioButtonConstr" type="radio" value="2.0" class="radiobatonPaint" id = "radiobatonK2">  
                    		<label for = "radiobatonK2" class="radioLabel">Рамні конструкції  (К=2)</label></p>                                     
                		 </choice_constr>
                	</mod1> 
@@ -86,11 +86,11 @@
 							<p>Мастило:</p>
           			    </name> 
           			        <dataСalculation class= "dataСalculation"> 
-          			        <p>asd</p>
-          			        <p>ad</p>
-          			        <p>asd</p>
-          			        <p>asd</p>
-          			        <p>ad</p>
+          			        <p id = "paintFinal"></p>
+          			        <p id = "primerFinal"></p>
+          			        <p id = "solventFinal"></p>
+          			        <p id = "nefrasFinal"></p>
+          			        <p id = "oilFinal"></p>
           			        </dataСalculation>      
               		  </resultatName>                                                                 
             </div>
